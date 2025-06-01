@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration & Resources for Aspiring Designers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Inspiration & Resources That Fuel My Dream</h1>
+            <div id="time-display"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="steps.html"><i class="fas fa-list-ol"></i> Step by Step</a></li>
+                <li><a href="resources.html" class="active"><i class="fas fa-lightbulb"></i> Inspiration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Find Inspiration</h2>
+            <div class="search-container">
+                <input type="text" id="resource-search" placeholder="Search designers, tools, or resources...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <h3>Filter Resources:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="designer">Designers</button>
+                <button class="filter-btn" data-filter="tool">Tools</button>
+                <button class="filter-btn" data-filter="learning">Learning</button>
+                <button class="filter-btn" data-filter="inspiration">Inspiration</button>
+            </div>
+        </section>
+
+        <section class="resources-grid">
+            <div class="resource-card" data-category="designer">
+                <div class="card-header">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Paula Scher</h4>
+                </div>
+                <div class="card-body">
+                    <p>Typography & Branding (Pentagram)</p>
+                    <a href="https://www.pentagram.com/about/paula-scher" target="_blank">View Profile</a>
+                </div>
+            </div>
+                        <div class="resource-card" data-category="designer">
+                <div class="card-header">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Stefan Sagmeister</h4>
+                </div>
+                <div class="card-body">
+                    <p>Graphic & Experimental Design</p>
+                    <a href="https://en.wikipedia.org/wiki/Stefan_Sagmeister" target="_blank">View Profile</a>
+                </div>
+            </div>
+            <div class="resource-card" data-category="designer">
+                <div class="card-header">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Chris Do</h4>
+                </div>
+                <div class="card-body">
+                    <p>Design Education & Brand Strategy</p>
+                    <a href="https://www.thefutur.com/chris-do" target="_blank">View Profile</a>
+                </div>
+            </div>
+            <div class="resource-card" data-category="designer">
+                <div class="card-header">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Jessica Walsh</h4>
+                </div>
+                <div class="card-body">
+                    <p>Creative Direction & Advertising</p>
+                    <a href="https://en.wikipedia.org/wiki/Jessica_Walsh" target="_blank">View Profile</a>
+                </div>
+            </div>
+            <div class="resource-card" data-category="designer">
+                <div class="card-header">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Alan Chan</h4>
+                </div>
+                <div class="card-body">
+                    <p>Cross-Cultural Branding & Packaging</p>
+                    <a href="https://www.alanchandesign.com/" target="_blank">View Profile</a>
+                </div>
+            </div>
+            <div class="resource-card" data-category="designer">
+                <div class="card-header">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Kashiwa Sato</h4>
+                </div>
+                <div class="card-body">
+                    <p>Branding & Minimalism</p>
+                    <a href="https://kashiwasato.com/" target="_blank">View Profile</a>
+                </div>
+            </div>
+            <div class="resource-card" data-category="designer">
+                <div class="card-header">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Ellen Lupton</h4>
+                </div>
+                <div class="card-body">
+                    <p>Typography, Graphic Design Education, Book Design</p>
+                    <a href="https://ellenlupton.com/" target="_blank">View Profile</a>
+                </div>
+            </div>
+            <div class="resource-card" data-category="designer">
+                <div class="card-header">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>David Carson</h4>
+                </div>
+                <div class="card-body">
+                    <p>Experimental Typography, Magazine Design</p>
+                    <a href="https://www.davidcarsondesign.com/" target="_blank">View Profile</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="newsletter">
+            <h3>Stay Updated with Design Trends</h3>
+            <form id="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/ooi.enen"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/03.02.10/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/Home"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>© <span id="current-year"></span> OOI XIN EN. All rights reserved.</p>
+            <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
